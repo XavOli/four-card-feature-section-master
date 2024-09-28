@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Import tailwind. I am only using CDN because it is a very small project -->
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,50 +20,73 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body style="font-family: 'Poppins', sans-serif;">
 
   <!-- Global container -->
    <div class="flex justify-center min-h-screen bg-[#fafafa]">
 
     <!-- Content container-->
-     <div class="flex flex-col items-center my-20 space-y-20 px-10">
+     <div class="flex flex-col items-center my-20 space-y-16 px-8">
 
       <!--Headed text container-->
       <div class="flex flex-col space-y-6 max-w-xl">
         <div class="space-y-2">
-          <h2 class="text-4xl text-center font-base">Reliable, efficient delivery</h2>
-          <h1 class="text-4xl font-bold text-center">Powered by Technology</h1>
+          <h2 class="text-2xl text-center font-normal text-[#4c4e61]">Reliable, efficient delivery</h2>
+          <h1 class="text-2xl text-center font-bold text-[#4c4e61]">Powered by Technology</h1>
         </div>
-
-        <p class="text-center text-lg font-light">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+        <p class="text-center text-sm font-normal text-[#a3a5ae]">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
       </div>
 
       <!-- Cards container-->
-      <div class="flex flex-col space-y-8 w-full">
+      <div class="flex flex-col space-y-8 w-full lg:grid lg:grid-cols-3 lg:space-y-0 lg:gap-5 lg:grid-templaterows-4">
 
         <!-- First card -->
-        <div class="flex flex-col border-t-4 border-[#45d3d3] rounded-lg p-8 w-full h-64 shadow-xl justify-between">
-        <div>
-          <h1 class="text-left text-2xl font-bold">
-            Supervisor
-          </h1>
-          <p class="font-light text-lg">Monitors activity to identify project roadblocks</p>
-        </div>
-        <img src="./images/icon-supervisor.svg" alt="" class="w-16 self-end">
-        </div>
-        <!-- Second card -->
-        <div class="flex flex-col border-t-4 border-[#45d3d3] rounded-lg p-5 w-full max-w-100 h-56 shadow-xl justify-between">
-          <div>
-            <h1 class="text-left text-2xl font-bold">
+        <div class="flex flex-col border-t-4 border-[#45d3d3] rounded-md py-6 px-8 w-full h-64 shadow-xl justify-between lg:row-start-2 lg:row-span-2">
+          <div class="space-y-2">
+            <h1 class="text-left text-xl font-bold text-[#4c4e61]">
               Supervisor
             </h1>
-            <p class="font-light text-lg">Monitors activity to identify project roadblocks</p>
+            <p class="font-extralight text-md text-[#a3a5ae]">Monitors activity to identify project roadblocks</p>
           </div>
           <img src="./images/icon-supervisor.svg" alt="" class="w-16 self-end">
+        </div>
+        
+
+        <!-- Second card -->
+        <div class="flex flex-col border-t-4 border-[#ea5353] rounded-md py-6 px-8 w-full h-64 shadow-xl justify-between lg:row-span-2">
+          <div class="space-y-2">
+            <h1 class="text-left text-xl font-bold text-[#4c4e61]">
+              Supervisor
+            </h1>
+            <p class="font-extralight text-md text-[#a3a5ae]">Monitors activity to identify project roadblocks</p>
           </div>
-      </div>
-      
-       
+          <img src="./images/icon-supervisor.svg" alt="" class="w-14 self-end">
+        </div>
+
+        <!-- Third card -->
+        <div class="flex flex-col border-t-4 border-[#fcaf4a] rounded-md py-6 px-8 w-full h-64 shadow-xl justify-between lg:row-span-2 lg:col-start-2">
+          <div class="space-y-2">
+            <h1 class="text-left text-xl font-bold text-[#4c4e61]">
+              Supervisor
+            </h1>
+            <p class="font-extralight text-md text-[#a3a5ae]">Monitors activity to identify project roadblocks</p>
+          </div>
+          <img src="./images/icon-supervisor.svg" alt="" class="w-14 self-end">
+        </div>
+
+        <!-- Fourth card -->
+        <div class="flex flex-col border-t-4 border-[#549ef2] rounded-md py-6 px-8 w-full h-64 shadow-xl justify-between lg:row-span-2 lg:row-start-2 lg:col-start-3">
+          <div class="space-y-2">
+            <h1 class="text-left text-xl font-bold text-[#4c4e61]">
+              Supervisor
+            </h1>
+            <p class="font-extralight text-md text-[#a3a5ae]">Monitors activity to identify project roadblocks</p>
+          </div>
+          <img src="./images/icon-supervisor.svg" alt="" class="w-14 self-end">
+        </div>
+
+
+      </div>      
      </div>
    </div>   
  
